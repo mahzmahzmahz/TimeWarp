@@ -4,7 +4,7 @@ import { useState } from "react"
 import Header from "./Header"
 import Video from "./Video"
 import DatePicker from 'react-date-picker'
-
+import VideoInfo from './VideoInfo'
 
 
 
@@ -139,9 +139,16 @@ function App() {
     
     let theseVids = vids.filter((vid) => vid.year === fullDate + 13 || vid.year === fullDate + 14 || vid.year === fullDate + 15)
     console.log(theseVids)
-    setEmbed(theseVids[(Math.floor(Math.random() * 20))].video)
+    setEmbed(theseVids[(Math.floor(Math.random() * 20))])
     
   }
+
+  function selectVideo(){
+    let theseVids = vids.filter((vid) => vid.year === dateForVid + 13 || vid.year === dateForVid + 14 || vid.year === dateForVid + 15)
+    console.log(theseVids)
+    setEmbed(theseVids[(Math.floor(Math.random() * 20))])
+  }
+
   console.log(date)
   console.log(dateForVid)
   console.log(embed)
@@ -150,17 +157,15 @@ function App() {
 
       <Header/>
         <Container>
-
           <DatePicker
             onChange={handleChangeDate}
             value={date}
             minDate={new Date("01-01-1970")}
             maxDate={new Date(hoop)}
           />
-
-
-
+          
       </Container>
+      {video ? <VideoInfo embed={embed} selectVideo = {selectVideo} /> : null}
       {video ? <Video embed={embed}/> : null}
     </div>
   );

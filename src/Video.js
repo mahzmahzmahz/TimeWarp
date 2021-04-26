@@ -5,7 +5,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 function Video({embed}){
     return(
         <VideoContainer>
-            <YoutubeEmbed className="autoplay" embedId={embed} />
+            <YoutubeEmbed className="autoplay" embedId={embed.video} />
             {/* </div><iframe width='560' height="315" src=`https://www.youtube.com/embed/${embed}I?autoplay=1` frameborder='0' allowfullscreen></iframe> */}
         </VideoContainer>
     )
