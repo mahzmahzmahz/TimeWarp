@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import headerImg from './headerImg.png'
 
 function Header(){
     return(
@@ -15,7 +15,7 @@ function Header(){
 export default Header;
 
 const Container = styled.section`
-    background: rgb(97, 58, 156);
+    background-image: url(${headerImg});
     display: flex;
     flex-wrap: flex;
     min-height: 5vh;
@@ -30,4 +30,8 @@ const Container = styled.section`
 
 const Title = styled.h1` 
     margin: 0;
+    color:  #a1ff6b;
+    font-size: xx-large;
+    -webkit-text-stroke: .5px black;
+    text-shadow: 2px 0px 10px #e9ff6b;
 `
