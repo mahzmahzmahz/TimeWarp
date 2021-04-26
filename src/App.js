@@ -19,6 +19,32 @@ function App() {
 
 
   const vids = [
+    //1983
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Flashdance... What A Feeling", artist: "Irene Cara", video: "miax0Jpe5mA", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+      {song: "Every Breath You Take", artist: "The Police", video: "OMOGaugKpzs", year: 1983},
+
+    //1984
+
+    //1985
     //2004
       {song: "Meant To Live", artist: "Switchfoot", video: "Ky_prSro9iw", year: 2004},
       {song: "My Band", artist: "D12", video: "Bd4XHnTDTqc", year: 2004}, 
