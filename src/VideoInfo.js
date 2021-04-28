@@ -8,7 +8,7 @@ function VideoInfo({selectVideo, embed}){
         <h4>Title: {embed.song}</h4>
         <h5>Artist: {embed.artist}</h5>
         <h5>Year: {embed.year}</h5>
-        <button onClick={selectVideo} >New Video</button>
+        <Button onClick={selectVideo} >New Video</Button>
     </Container>
     )
 }
@@ -20,4 +20,24 @@ const Container= styled.div`
     margin-right: 15%;
     margin-left: 15%;
     text-align: center;
+`
+const Button = styled.button`
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FF6EC7;
+    background-color:#C7FF6E;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FF6EC7;
+    text-align:center;
+    transition: all 0.2s;
+
+    &:hover{
+         color:#C7FF6E;
+         background-color:#FF6EC7;
+        }
 `
