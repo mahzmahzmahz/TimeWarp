@@ -2,12 +2,18 @@ import styled from "styled-components"
 import "./App";
 import YoutubeEmbed from "./YoutubeEmbed";
 
+
+
 function Video({embed}){
+
+
+
     return(
+        <div>
         <VideoContainer>
-            <YoutubeEmbed className="autoplay" embedId={embed.video} />
-            {/* </div><iframe width='560' height="315" src=`https://www.youtube.com/embed/${embed}I?autoplay=1` frameborder='0' allowfullscreen></iframe> */}
+            <YoutubeEmbed allow="autoplay" embedId={embed.video} />
         </VideoContainer>
+        </div>
     )
 }
 

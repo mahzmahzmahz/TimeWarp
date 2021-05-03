@@ -20,6 +20,11 @@ const Container= styled.div`
     margin-right: 15%;
     margin-left: 15%;
     text-align: center;
+    background-image: radial-gradient(
+        circle at top left, 
+        #e3f8fc, 
+        #7ae9ff 75%
+        );
 `
 const Button = styled.button`
     display:inline-block;

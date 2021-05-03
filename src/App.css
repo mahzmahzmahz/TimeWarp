@@ -51,3 +51,9 @@
   width: 100%;
   position: absolute;
 }
+
+body{
+  background-image: url("4.jpg");
+  background-repeat: repeat;
+
+}

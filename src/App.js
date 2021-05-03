@@ -833,7 +833,7 @@ function App() {
 
     //2021
     {song: "Save Your Tears", artist: "The Weeknd", video: "XXYlFuWEuKI", year: 2021},
-    {song: "drivers license", artist: "Olivia Rodrigo", video: "16YnOUnbE6s", year: 2021},
+    {song: "drivers license", artist: "Olivia Rodrigo", video: "ZmDBbnmKpqQ", year: 2021},
     {song: "Leave the Door Open", artist: "Bruno Mars, Anderson .Paak, Silk Sonic", video: "adLGHcj_fmA", year: 2021},
     {song: "We're Good", artist: "Dua Lipa", video: "jr47YisIsz8", year: 2021},
     {song: "Justin Bieber", artist: "Peaches ft. Daniel Caesar, Giveon", video: "tQ0yjYUFKAE", year: 2021},
@@ -856,7 +856,6 @@ function App() {
   ]
 
 
- 
 
   function handleChangeDate(value){
     const fullDate = value.getFullYear()
@@ -865,24 +864,28 @@ function App() {
     setVideo(true)
     
     let theseVids = vids.filter((vid) => vid.year === fullDate + 13 || vid.year === fullDate + 14 || vid.year === fullDate + 15)
-    console.log(theseVids)
-    setEmbed(theseVids[(Math.floor(Math.random() * 60))])
+    console.log(theseVids.length)
+    setEmbed(theseVids[(Math.floor(Math.random() * theseVids.length))])
     
   }
 
   function selectVideo(){
     let theseVids = vids.filter((vid) => vid.year === dateForVid + 13 || vid.year === dateForVid + 14 || vid.year === dateForVid + 15)
-    console.log(theseVids)
-    setEmbed(theseVids[(Math.floor(Math.random() * 60))])
+    console.log(theseVids.length)
+    setEmbed(theseVids[(Math.floor(Math.random() * theseVids.length))])
   }
 
   console.log(date)
   console.log(dateForVid)
   console.log(embed)
   return (
-    <div>
-
+<>
       <Header/>
+      <TextContainer>
+        <Welcome>This is TimeWarp</Welcome>
+        <MissionStatement>If you would be so kind as to enter your birth date, TimeWarp will generate a song or music video from your formative years to trigger immediate nostalgia. </MissionStatement>
+      </TextContainer>
+
         <Container>
           <DatePicker
             onChange={handleChangeDate}
@@ -894,7 +897,7 @@ function App() {
       </Container>
       {video ? <VideoInfo embed={embed} selectVideo = {selectVideo} /> : null}
       {video ? <Video embed={embed}/> : null}
-    </div>
+    </>
   );
 }
 
@@ -902,10 +905,29 @@ function App() {
 export default App;
 
 const Container = styled.section`
-    padding:10%;
+    padding:4%;
     display: flex;
     flex-wrap: flex;
     justify-content: center;
   `
+  const TextContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 0;
+  `
 
+const Welcome = styled.h1`
+  text-align: center;
+  font-family: font-family: MS Courier New, monospace;
+  `
 
+const MissionStatement = styled.p`
+    text-align: center;
+    justify-content: center;
+    font-family: font-family: MS Courier New, monospace;
+    font-size: 80%;
+    max-width: 100%;
+`
+ 
