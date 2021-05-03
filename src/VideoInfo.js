@@ -20,6 +20,7 @@ const Container= styled.div`
     margin-right: 15%;
     margin-left: 15%;
     text-align: center;
+    border-radius: 5rem;
     background-image: radial-gradient(
         circle at top left, 
         #e3f8fc, 
