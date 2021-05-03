@@ -20,7 +20,7 @@ const Container= styled.div`
     margin-right: 15%;
     margin-left: 15%;
     text-align: center;
-    border-radius: 5rem;
+    border-radius: 2rem;
     background-image: radial-gradient(
         circle at top left, 
         #e3f8fc, 
@@ -33,7 +33,7 @@ const Button = styled.button`
     border:0.1em solid #FF6EC7;
     background-color:#C7FF6E;
     margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
+    border-radius:0.7em;
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
