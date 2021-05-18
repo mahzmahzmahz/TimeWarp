@@ -880,6 +880,7 @@ function App() {
   console.log(embed)
   return (
 <>
+
       <Header/>
       <TextContainer>
         <Welcome>This is TimeWarp</Welcome>
