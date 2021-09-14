@@ -898,6 +898,10 @@ function App() {
       </Container>
       {video ? <VideoInfo embed={embed} selectVideo = {selectVideo} /> : null}
       {video ? <Video embed={embed}/> : null}
+
+    <ContainerTwo>
+          <Welcome> This site was written and designed by Jen Tracy and Alex Marz </Welcome>
+    </ContainerTwo>
     </>
   );
 }
@@ -932,3 +936,10 @@ const MissionStatement = styled.p`
     max-width: 100%;
 `
  
+const ContainerTwo = styled.section`
+position: absolute;
+left:0;
+bottom:0;
+right:0;
+
+`
