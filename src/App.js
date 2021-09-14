@@ -900,8 +900,9 @@ function App() {
       {video ? <Video embed={embed}/> : null}
 
     <ContainerTwo>
-          <Welcome> This site was written and designed by Jen Tracy and Alex Marz </Welcome>
+          <Author> This site was written and designed by Jen Tracy and Alex Marz </Author>
     </ContainerTwo>
+    
     </>
   );
 }
@@ -941,5 +942,9 @@ position: absolute;
 left:0;
 bottom:0;
 right:0;
+`
 
+const Author = styled.p`
+  text-align: center;
+  font-family: font-family: MS Courier New, monospace;
 `
