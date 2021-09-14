@@ -895,14 +895,15 @@ function App() {
             maxDate={new Date(hoop)}
           />
           
-      </Container>
+        </Container>
+        <ContainerTwo>
+            <Author> This site was written and designed by Jen Tracy and Alex Marz </Author>
+        </ContainerTwo>
+     
       {video ? <VideoInfo embed={embed} selectVideo = {selectVideo} /> : null}
       {video ? <Video embed={embed}/> : null}
+        
 
-    <ContainerTwo>
-          <Author> This site was written and designed by Jen Tracy and Alex Marz </Author>
-    </ContainerTwo>
-    
     </>
   );
 }
@@ -937,7 +938,7 @@ const MissionStatement = styled.p`
     max-width: 100%;
 `
  
-const ContainerTwo = styled.section`
+const ContainerTwo = styled.div`
 position: absolute;
 left:0;
 bottom:0;
